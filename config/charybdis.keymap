@@ -81,7 +81,7 @@
         layer_2 {
             bindings = <
 &trans  &kp F1         &kp F2            &kp F3        &kp F4     &kp F5               &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &kp F11        &kp F12           &kp MINUS     &kp EQUAL  &kp TILDE            &kp N1  &kp N2  &kp N3  &kp N4  &kp N5   &trans
+&trans  &kp F11        &kp F12           &kp MINUS     &kp EQUAL  &kp LS(EQUAL)        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5   &trans
 &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &kp COLON  &kp DOUBLE_QUOTES    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0   &trans
                                          &trans        &trans     &trans               &trans  &trans
             >;
