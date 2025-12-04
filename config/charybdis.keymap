@@ -22,9 +22,14 @@
             key-positions = <14 15>;
         };
 
-        delete {
-            bindings = <&kp DELETE>;
-            key-positions = <9 10>;
+        go_back {
+            bindings = <&kp LA(LEFT_ARROW)>;
+            key-positions = <3 4>;
+        };
+
+        go_front {
+            bindings = <&kp LA(RIGHT_ARROW)>;
+            key-positions = <7 8>;
         };
     };
 
