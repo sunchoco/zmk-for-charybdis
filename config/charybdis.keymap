@@ -29,15 +29,26 @@
         };
     };
 
+    behaviors {
+        td1_mouse: td1_mouse {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD1_MOUSE";
+            #binding-cells = <0>;
+            bindings = <&mkp MB1>, <&mkp MB2>;
+
+            tapping-term-ms = <350>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         layer_0 {
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E     &kp R     &kp T          &kp Y            &kp U        &kp I      &kp O       &kp P          &kp BACKSPACE
-&kp LEFT_ALT    &kp A  &kp S  &kp D     &kp F     &kp G          &kp H            &kp J        &kp K      &kp L       &kp SEMICOLON  &kp ENTER
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V     &kp B          &kp N            &kp M        &kp COMMA  &kp PERIOD  &kp SLASH      &kp RIGHT_SHIFT
-                              &mkp MB1  &mkp MB2  &lt 1 SPACE    &lt 2 BACKSPACE  &lt 3 ENTER
+&kp TAB         &kp Q  &kp W  &kp E      &kp R       &kp T          &kp Y            &kp U        &kp I      &kp O       &kp P          &kp BACKSPACE
+&kp LEFT_ALT    &kp A  &kp S  &kp D      &kp F       &kp G          &kp H            &kp J        &kp K      &kp L       &kp SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V       &kp B          &kp N            &kp M        &kp COMMA  &kp PERIOD  &kp SLASH      &kp RIGHT_SHIFT
+                              &kp LCTRL  &td1_mouse  &lt 1 SPACE    &lt 2 BACKSPACE  &lt 3 ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_UP C_VOL_DN>;
