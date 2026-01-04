@@ -47,16 +47,6 @@
             quick-tap-ms = <130>;
         };
 
-        auto_mouse: auto_mouse {
-            compatible = "zmk,behavior-auto-layer";
-            #binding-cells = <1>;
-
-            // 마우스 클릭 시 레이어 유지
-
-            continue-list = <LCLK RCLK MCLK SCRL_UP SCRL_DOWN HOME END LEFT_ARROW RIGHT_ARROW UP_ARROW DOWN_ARROW MCLK LCTRL LEFT_SHIFT LA(LEFT_ARROW) LA(RIGHT_ARROW) ENTER>;
-            ignore-modifiers;
-        };
-
         ht_delete: ht_delete {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_DELETE";
