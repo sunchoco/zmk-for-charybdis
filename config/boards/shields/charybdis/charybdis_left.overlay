@@ -58,12 +58,3 @@
                          LED_COLOR_ID_BLUE>;
     };
 };
-
-
-
-/ {
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-    };
-};
