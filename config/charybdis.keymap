@@ -33,6 +33,16 @@
             bindings = <&kp LG(LS(S))>;
             key-positions = <9 10>;
         };
+
+        goback {
+            bindings = <&kp LA(LEFT_ARROW)>;
+            key-positions = <3 4>;
+        };
+
+        goforward {
+            bindings = <&kp LA(RIGHT_ARROW)>;
+            key-positions = <7 8>;
+        };
     };
 
     behaviors {
