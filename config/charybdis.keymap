@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/rgb.h>
 
 &lt {
     tapping-term-ms = <200>;
@@ -24,14 +25,14 @@
             key-positions = <15 16>;
         };
 
-        go_back {
-            bindings = <&kp LA(LEFT_ARROW)>;
-            key-positions = <3 4>;
+        windows {
+            bindings = <&kp LGUI>;
+            key-positions = <25 26>;
         };
 
-        go_front {
-            bindings = <&kp LA(RIGHT_ARROW)>;
-            key-positions = <7 8>;
+        printscreen {
+            bindings = <&kp PRINTSCREEN>;
+            key-positions = <9 10>;
         };
     };
 
@@ -93,10 +94,10 @@
 
         layer_2 {
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &kp F11  &kp F12  &none   &none   &none     &none   &none   &none   &none   &none    &trans
-&trans  &none    &none    &none   &none   &none     &none   &none   &none   &none   &none    &trans
-                          &trans  &trans  &trans    &trans  &trans
+&trans  &kp F1      &kp F2   &kp F3  &kp F4  &kp F5    &kp F6           &kp F7           &kp F8           &kp F9           &kp F10          &trans
+&trans  &kp F11     &kp F12  &none   &none   &none     &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &trans
+&trans  &kp INSERT  &none    &none   &none   &none     &none            &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &trans
+                             &trans  &trans  &trans    &trans           &trans
             >;
         };
 
