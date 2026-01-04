@@ -88,6 +88,15 @@
             >;
         };
 
+        mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans              &kp HOME        &kp UP_ARROW    &kp END          &trans               &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans              &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F5               &kp ENTER
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LA(LEFT_ARROW)  &mkp LCLK       &trans          &mkp RCLK        &kp LA(RIGHT_ARROW)  &trans
+                        &trans  &trans  &trans    &trans              &trans
+            >;
+        };
+
         /* layer_2 {
             bindings = <
 &none  &none   &none    &none   &none         &none         &kp N1         &none         &none     &none  &none   &to 0
