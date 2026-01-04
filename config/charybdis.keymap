@@ -30,7 +30,7 @@
         };
 
         printscreen {
-            bindings = <&kp PRINTSCREEN>;
+            bindings = <&kp LG(LS(S))>;
             key-positions = <9 10>;
         };
     };
