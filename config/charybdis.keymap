@@ -11,7 +11,8 @@
 };
 
 / {
-   /*#if IS_ENABLED(CONFIG_ZMK_MOUSE) 
+   /*
+   #if IS_ENABLED(CONFIG_ZMK_MOUSE) 
     /* [추가] 트랙볼 감지 시 마우스 레이어(4번) 활성화 */
     trackball_listener {
         compatible = "zmk,input-listener";
@@ -20,7 +21,8 @@
         // 4번(mouse) 레이어로 2초간 임시 전환
         input-processors = <&zip_temp_layer 4 2000>; 
     };
-    #endif*/
+    #endif
+    */
 
     combos {
         compatible = "zmk,combos";
