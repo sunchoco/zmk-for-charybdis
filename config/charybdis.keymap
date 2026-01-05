@@ -45,7 +45,7 @@
         };
 
         rctrl {
-            bindings = <&none>;
+            bindings = <&kp RCTRL>;
             key-positions = <33 34>;
         };
     };
@@ -136,7 +136,7 @@
         mouse {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &kp F5              &kp HOME   &trans  &kp END    &trans               &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LA(LEFT_ARROW)  &mkp LCLK  &mo 5   &mkp RCLK  &kp LA(RIGHT_ARROW)  &kp ENTER
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LA(LEFT_ARROW)  &mkp LCLK  &mo 5   &mkp RCLK  &kp LA(RIGHT_ARROW)  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans              &trans     &trans  &trans     &trans               &trans
                         &trans  &trans  &trans    &trans              &trans
             >;
