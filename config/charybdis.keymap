@@ -59,7 +59,6 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            quick-tap-ms = <130>;
         };
 
         ht_delete: ht_delete {
@@ -78,7 +77,7 @@
             #binding-cells = <0>;
             bindings = <&mkp LCLK>, <&ht_mouse RCLK LCLK>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
         };
 
         ht_layer: ht_layer {
