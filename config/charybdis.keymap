@@ -75,9 +75,9 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_MOUSE";
             #binding-cells = <0>;
-            bindings = <&mkp LCLK>, <&ht_mouse RCLK LCLK>;
+            bindings = <&mkp LCLK>, <&mkp LCLK>, <&mkp RCLK>;
 
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
         };
 
         ht_layer: ht_layer {
