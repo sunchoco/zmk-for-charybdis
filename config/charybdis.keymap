@@ -89,6 +89,15 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <130>;
         };
+
+        mod_F5: mod_F5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_F5";
+            bindings = <&kp NUMBER_5>, <&kp F5>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
     };
 
     keymap {
